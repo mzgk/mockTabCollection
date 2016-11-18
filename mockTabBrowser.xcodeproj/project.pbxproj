@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322B8B601DDEBCBC00C16B5E /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322B8B5F1DDEBCBC00C16B5E /* TabCollectionViewCell.swift */; };
+		322B8B621DDEBCD000C16B5E /* WebCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322B8B611DDEBCD000C16B5E /* WebCollectionViewCell.swift */; };
 		32CDF3861DDE969D00046651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDF3851DDE969D00046651 /* AppDelegate.swift */; };
 		32CDF3881DDE969D00046651 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDF3871DDE969D00046651 /* WebViewController.swift */; };
 		32CDF38A1DDE969D00046651 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDF3891DDE969D00046651 /* SecondViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322B8B5F1DDEBCBC00C16B5E /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
+		322B8B611DDEBCD000C16B5E /* WebCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebCollectionViewCell.swift; sourceTree = "<group>"; };
 		32CDF3821DDE969D00046651 /* mockTabBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mockTabBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CDF3851DDE969D00046651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32CDF3871DDE969D00046651 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				32CDF3931DDE969D00046651 /* Info.plist */,
 				32CDF3851DDE969D00046651 /* AppDelegate.swift */,
 				32CDF3891DDE969D00046651 /* SecondViewController.swift */,
+				322B8B5F1DDEBCBC00C16B5E /* TabCollectionViewCell.swift */,
+				322B8B611DDEBCD000C16B5E /* WebCollectionViewCell.swift */,
 				32CDF3871DDE969D00046651 /* WebViewController.swift */,
 				32CDF38E1DDE969D00046651 /* Assets.xcassets */,
 				32CDF3901DDE969D00046651 /* LaunchScreen.storyboard */,
@@ -144,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322B8B601DDEBCBC00C16B5E /* TabCollectionViewCell.swift in Sources */,
+				322B8B621DDEBCD000C16B5E /* WebCollectionViewCell.swift in Sources */,
 				32CDF38A1DDE969D00046651 /* SecondViewController.swift in Sources */,
 				32CDF3861DDE969D00046651 /* AppDelegate.swift in Sources */,
 				32CDF3881DDE969D00046651 /* WebViewController.swift in Sources */,
