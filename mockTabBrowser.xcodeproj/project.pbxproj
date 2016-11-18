@@ -13,6 +13,7 @@
 		32CDF38D1DDE969D00046651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CDF38B1DDE969D00046651 /* Main.storyboard */; };
 		32CDF38F1DDE969D00046651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CDF38E1DDE969D00046651 /* Assets.xcassets */; };
 		32CDF3921DDE969D00046651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CDF3901DDE969D00046651 /* LaunchScreen.storyboard */; };
+		32CDF39B1DDE96FC00046651 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CDF3991DDE96FC00046651 /* WebView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32CDF38E1DDE969D00046651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32CDF3911DDE969D00046651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32CDF3931DDE969D00046651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32CDF39A1DDE96FC00046651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WebView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				32CDF3871DDE969D00046651 /* FirstViewController.swift */,
 				32CDF3891DDE969D00046651 /* SecondViewController.swift */,
 				32CDF38B1DDE969D00046651 /* Main.storyboard */,
+				32CDF3991DDE96FC00046651 /* WebView.storyboard */,
 				32CDF38E1DDE969D00046651 /* Assets.xcassets */,
 				32CDF3901DDE969D00046651 /* LaunchScreen.storyboard */,
 				32CDF3931DDE969D00046651 /* Info.plist */,
@@ -129,6 +132,7 @@
 			files = (
 				32CDF3921DDE969D00046651 /* LaunchScreen.storyboard in Resources */,
 				32CDF38F1DDE969D00046651 /* Assets.xcassets in Resources */,
+				32CDF39B1DDE96FC00046651 /* WebView.storyboard in Resources */,
 				32CDF38D1DDE969D00046651 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +167,14 @@
 				32CDF3911DDE969D00046651 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		32CDF3991DDE96FC00046651 /* WebView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32CDF39A1DDE96FC00046651 /* Base */,
+			);
+			name = WebView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
