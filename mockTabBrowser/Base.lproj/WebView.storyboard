@@ -38,7 +38,7 @@
                                     <constraint firstItem="fwd-T5-IT1" firstAttribute="top" secondItem="TIQ-Fw-dMo" secondAttribute="top" constant="20" id="mdo-cv-m1z"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okr-cb-PAg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okr-cb-PAg" userLabel="FunctionButton">
                                 <rect key="frame" x="736" y="943" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="K7A-E3-iJK"/>
@@ -46,9 +46,9 @@
                                 </constraints>
                                 <state key="normal" title="B"/>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LoM-9v-D5C">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LoM-9v-D5C" userLabel="TabCollectionView">
                                 <rect key="frame" x="0.0" y="943" width="736" height="32"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="WVs-Rx-Dzj"/>
                                 </constraints>
@@ -70,17 +70,41 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uOJ-cu-Mxy" userLabel="WebCollectionView">
+                                <rect key="frame" x="0.0" y="64" width="768" height="879"/>
+                                <color key="backgroundColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RMr-zS-zya">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WebCell" id="wDC-dM-P2j">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uOJ-cu-Mxy" firstAttribute="top" secondItem="TIQ-Fw-dMo" secondAttribute="bottom" id="3pJ-ip-bno"/>
                             <constraint firstAttribute="trailing" secondItem="TIQ-Fw-dMo" secondAttribute="trailing" id="7IG-uS-SHN"/>
                             <constraint firstItem="TIQ-Fw-dMo" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="FHn-IP-5bg"/>
                             <constraint firstItem="LoM-9v-D5C" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Lh7-dR-TYl"/>
                             <constraint firstItem="Okr-cb-PAg" firstAttribute="leading" secondItem="LoM-9v-D5C" secondAttribute="trailing" id="X5X-tg-Fh9"/>
                             <constraint firstItem="TIQ-Fw-dMo" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="Ykh-u2-iq8"/>
+                            <constraint firstItem="uOJ-cu-Mxy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="col-26-gPf"/>
                             <constraint firstAttribute="trailing" secondItem="Okr-cb-PAg" secondAttribute="trailing" id="ekH-SD-xMm"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="LoM-9v-D5C" secondAttribute="bottom" id="h2t-fM-3aG"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Okr-cb-PAg" secondAttribute="bottom" id="mVe-wL-XRS"/>
+                            <constraint firstAttribute="trailing" secondItem="uOJ-cu-Mxy" secondAttribute="trailing" id="qiE-EI-lgR"/>
+                            <constraint firstItem="LoM-9v-D5C" firstAttribute="top" secondItem="uOJ-cu-Mxy" secondAttribute="bottom" id="r4Y-0r-GdG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
