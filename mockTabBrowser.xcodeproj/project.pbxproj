@@ -58,14 +58,14 @@
 		32CDF3841DDE969D00046651 /* mockTabBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				32CDF3931DDE969D00046651 /* Info.plist */,
 				32CDF3851DDE969D00046651 /* AppDelegate.swift */,
-				32CDF3871DDE969D00046651 /* WebViewController.swift */,
 				32CDF3891DDE969D00046651 /* SecondViewController.swift */,
-				32CDF38B1DDE969D00046651 /* Main.storyboard */,
-				32CDF3991DDE96FC00046651 /* WebView.storyboard */,
+				32CDF3871DDE969D00046651 /* WebViewController.swift */,
 				32CDF38E1DDE969D00046651 /* Assets.xcassets */,
 				32CDF3901DDE969D00046651 /* LaunchScreen.storyboard */,
-				32CDF3931DDE969D00046651 /* Info.plist */,
+				32CDF38B1DDE969D00046651 /* Main.storyboard */,
+				32CDF3991DDE96FC00046651 /* WebView.storyboard */,
 			);
 			path = mockTabBrowser;
 			sourceTree = "<group>";
@@ -318,6 +318,7 @@
 				32CDF3981DDE969D00046651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

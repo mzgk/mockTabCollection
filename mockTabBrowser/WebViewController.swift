@@ -20,6 +20,9 @@ class WebViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // StatusBarの文字を白くする
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
