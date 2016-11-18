@@ -9,5 +9,6 @@
 import UIKit
 
 class WebCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var indexLabel: UILabel!
     
 }

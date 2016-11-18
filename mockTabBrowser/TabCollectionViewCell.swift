@@ -9,5 +9,6 @@
 import UIKit
 
 class TabCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var indexLabel: UILabel!
 
 }
