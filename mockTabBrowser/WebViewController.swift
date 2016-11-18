@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  WebViewController.swift
 //  mockTabBrowser
 //
 //  Created by mzgk on 2016/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class WebViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
