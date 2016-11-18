@@ -96,27 +96,27 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WebCell" id="wDC-dM-P2j" customClass="WebCollectionViewCell" customModule="mockTabBrowser" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="170" width="474" height="540"/>
+                                        <rect key="frame" x="0.0" y="169.5" width="474" height="540"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="474" height="540"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2p-aI-CCE">
-                                                    <rect key="frame" x="216" y="260" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vR9-H2-VAD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="474" height="540"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="f2p-aI-CCE" firstAttribute="centerX" secondItem="wDC-dM-P2j" secondAttribute="centerX" id="uUb-70-fFn"/>
-                                            <constraint firstItem="f2p-aI-CCE" firstAttribute="centerY" secondItem="wDC-dM-P2j" secondAttribute="centerY" id="xzf-Nk-w6x"/>
+                                            <constraint firstItem="vR9-H2-VAD" firstAttribute="top" secondItem="wDC-dM-P2j" secondAttribute="top" id="2Yh-PJ-H35"/>
+                                            <constraint firstAttribute="bottom" secondItem="vR9-H2-VAD" secondAttribute="bottom" id="Abz-BQ-5wf"/>
+                                            <constraint firstItem="vR9-H2-VAD" firstAttribute="leading" secondItem="wDC-dM-P2j" secondAttribute="leading" id="UjL-Jq-YzO"/>
+                                            <constraint firstAttribute="trailing" secondItem="vR9-H2-VAD" secondAttribute="trailing" id="jK0-Em-QFO"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="indexLabel" destination="f2p-aI-CCE" id="D39-W0-5uI"/>
+                                            <outlet property="baseView" destination="vR9-H2-VAD" id="kB2-zz-Vf8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

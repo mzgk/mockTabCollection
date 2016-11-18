@@ -31,6 +31,8 @@ class WebViewController: UIViewController, UICollectionViewDelegate, UICollectio
 
         // 1ページ（画面）単位でスクロール
         webCollectionView.isPagingEnabled = true
+
+        print("WebView : \(webCollectionView.bounds)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +44,7 @@ class WebViewController: UIViewController, UICollectionViewDelegate, UICollectio
 // MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // temporary
-        return 10
+        return 2
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -60,7 +62,8 @@ class WebViewController: UIViewController, UICollectionViewDelegate, UICollectio
         }
         else {
             let cell = webCollectionView.dequeueReusableCell(withReuseIdentifier: "WebCell", for: indexPath) as! WebCollectionViewCell
-            cell.indexLabel.text = String(indexPath.item)
+            print("WebView4 : \(webCollectionView.bounds)")
+            cell.generateWKWebView(viewSize: webCollectionView.bounds)
             return cell
         }
     }
@@ -72,6 +75,7 @@ class WebViewController: UIViewController, UICollectionViewDelegate, UICollectio
             return CGSize(width: 100.0, height: 32)
         }
         else {
+            print("WebView3 : \(webCollectionView.bounds)")
             return CGSize(width: webCollectionView.frame.size.width, height: webCollectionView.frame.size.height)
         }
     }
